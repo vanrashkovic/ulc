@@ -47,8 +47,8 @@
     <div class="mouseCursor cursor-outer"></div>
     <div class="mouseCursor cursor-inner"><span>Drag</span></div>
 
-    <!-- Pre-Loader -->
-    <div class="preloader"></div>
+    <!-- Pre-Loader 
+    <div class="preloader"></div>-->
 
     <!-- Header Top Area -->
     <div class="header-top-area header-top-two green-bg">
@@ -280,7 +280,7 @@
                     <div class="single-feature-item">
                         <div class="feature-item-inner">
                             <div class="feature-icon">
-                                <i class="flaticon-growth"></i>
+                                <i class="flaticon-bar-chart"></i>
                             </div>
                             <div class="feature-title">
                                 <h4 class="text-white">
@@ -908,6 +908,207 @@
     </div>
 
 
+         <style>
+
+/* Bulle flottante */
+.whatsapp-bubble {
+  position: fixed;
+  bottom: 70px;
+  left: 20px;
+  background: #25D366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 9998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-bubble:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-bubble img {
+  width: 28px;
+  height: 28px;
+}
+
+      
+/* Popup */
+.whatsapp-popup {
+  position: fixed;
+  bottom: 90px;
+  left: 20px;
+  width: 320px;
+  max-width: 90%;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px) scale(0.98);
+  transition: all 0.5s ease;
+  font-family: 'Arial', sans-serif;
+  pointer-events: none;
+}
+
+.whatsapp-popup.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.popup-header {
+  background: #25D366;
+  color: white;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.popup-header img {
+  width: 32px;
+  height: 32px;
+}
+
+.popup-header span {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.popup-header button {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popup-body {
+  padding: 15px;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+.chat-bubble {
+  background-color: #dcf8c6;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 15px 15px 0 15px;
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 15px;
+  opacity: 0;
+  word-wrap: wrap;
+  transform: translateY(10px);
+  transition: all 0.6s ease;
+}
+
+.chat-bubble.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.popup-btn {
+  background: #25D366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.popup-btn:hover {
+  background: #1eb85c;
+}
+
+
+@keyframes bounceWhatsApp {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-6px);
+  }
+  60% {
+    transform: translateY(3px);
+  }
+}
+
+.whatsapp-bubble.bounce {
+  animation: bounceWhatsApp 0.6s ease;
+}
+   </style>
+
+
+    <!-- Bulle flottante WhatsApp -->
+<div class="whatsapp-bubble" id="whatsappBubbleBtn">
+	<img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp">
+  </div>
+  
+  <!-- Popup WhatsApp -->
+  <div class="whatsapp-popup" id="whatsappPopup">
+	<div class="popup-header">
+	  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+	  <span style="color:white;">Support Ulysse Lévoumba Conseil</span>
+	  <button id="closePopup">&times;</button>
+	</div>
+	<div class="popup-body">
+	  <div class="chat-bubble" id="chatBubble" style="padding:16px;">
+		👋 Salut ! Bésoin d'aide ?
+	  </div>
+	  <a href="https://wa.me/+22507301051"
+      target="_blank" class="popup-btn">
+		Discuter sur WhatsApp
+	  </a>
+	</div>
+  </div>
+
+    <script>
+	document.addEventListener('DOMContentLoaded', () => {
+	  const popup = document.getElementById('whatsappPopup');
+	  const bubbleBtn = document.getElementById('whatsappBubbleBtn');
+	  const closeBtn = document.getElementById('closePopup');
+	  const chatBubble = document.getElementById('chatBubble');
+  
+	  // Afficher le popup quand on clique sur la bulle
+	  bubbleBtn.addEventListener('click', () => {
+		popup.classList.add('show');
+		setTimeout(() => {
+		  chatBubble.classList.add('visible');
+		}, 500);
+	  });
+  
+	  // Fermer le popup
+	  closeBtn.addEventListener('click', () => {
+		popup.classList.remove('show');
+		chatBubble.classList.remove('visible');
+	  });
+  
+	  // Animation de rebond toutes les 10 secondes
+	  setInterval(() => {
+		bubbleBtn.classList.add('bounce');
+		setTimeout(() => {
+		  bubbleBtn.classList.remove('bounce');
+		}, 600); // Durée de l'animation
+	  }, 10000); // Toutes les 10 secondes
+	});
+</script>
+
+
+
     <!-- Popper JS -->
     <script src="assets/js/popper.min.js"></script>
     <!-- Bootstrap JS -->
@@ -938,6 +1139,8 @@
     <script src="assets/js/circle-progress.min.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+
+
 </body>
 
 
