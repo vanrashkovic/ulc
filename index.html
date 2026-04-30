@@ -122,6 +122,10 @@
                                         </li>
 
                                         <li class="nav-item">
+                                            <a class="nav-link" href="#formations">Formations</a>
+                                        </li>
+
+                                        <li class="nav-item">
                                             <a class="nav-link" href="#faqs">Faqs</a>
                                         </li>
 
@@ -248,83 +252,82 @@
         </div>
     </div>
 
-<!-- Feature Area  -->
-<div class="feature-section feature-two section-padding">
-    <div class="container">
-        <div class="row">
+    <!-- Feature Area  -->
+    <div class="feature-section feature-two section-padding">
+        <div class="container">
+            <div class="row">
 
-            <!-- Bloc 1 -->
-            <div class="col-xl-4 col-lg-4 col-md-6 col-12 wow fadeInLeft animated" data-wow-delay="200ms">
-                <div class="single-feature-item">
-                    <div class="feature-item-inner">
-                        <div class="feature-icon">
-                            <i class="las la-lightbulb"></i>
-                        </div>
-                        <div class="feature-title">
-                            <h4 class="text-white">
-                                Approche Stratégique
-                            </h4>
+                <div class="row mt-60">
+
+                    <!-- Bloc 1 -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeInUp animated" data-wow-delay="100ms">
+                        <div class="feature-item-wrap">
+                            <div class="feature-icon">
+                                <i class="las la-search-dollar"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Étude d’opportunité</h4>
+                                <p>
+                                    Analyse approfondie de la viabilité et du potentiel
+                                    de vos projets pour orienter vos décisions stratégiques.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <p>
-                        Une vision globale et structurée pour analyser, anticiper
-                        et orienter efficacement vos décisions d’entreprise.
-                    </p>
-                    <a href="#services" class="service-details-link">
-                        <i class="las la-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
 
-            <!-- Bloc 2 -->
-            <div class="col-xl-4 col-lg-4 col-md-6 col-12 wow fadeInLeft animated" data-wow-delay="400ms">
-                <div class="single-feature-item">
-                    <div class="feature-item-inner">
-                        <div class="feature-icon">
-                            <i class="las la-cogs"></i>
-                        </div>
-                        <div class="feature-title">
-                            <h4 class="text-white">
-                                Solutions Sur Mesure
-                            </h4>
+                    <!-- Bloc 2 -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeInUp animated" data-wow-delay="200ms">
+                        <div class="feature-item-wrap">
+                            <div class="feature-icon">
+                                <i class="las la-tasks"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Gestion de projet</h4>
+                                <p>
+                                    Planification, coordination et suivi rigoureux
+                                    pour assurer la réussite de vos projets.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <p>
-                        Chaque entreprise est unique. Les solutions proposées
-                        sont adaptées à vos objectifs, votre secteur et vos contraintes.
-                    </p>
-                    <a href="#services" class="service-details-link">
-                        <i class="las la-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
 
-            <!-- Bloc 3 -->
-            <div class="col-xl-4 col-lg-4 col-12 wow fadeInLeft animated" data-wow-delay="600ms">
-                <div class="single-feature-item">
-                    <div class="feature-item-inner">
-                        <div class="feature-icon">
-                            <i class="las la-trophy"></i>
-                        </div>
-                        <div class="feature-title">
-                            <h4 class="text-white">
-                                Résultats Concrets
-                            </h4>
+                    <!-- Bloc 3 -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeInUp animated" data-wow-delay="300ms">
+                        <div class="feature-item-wrap">
+                            <div class="feature-icon">
+                                <i class="las la-coins"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Recherche de financement</h4>
+                                <p>
+                                    Identification et mobilisation des solutions de financement
+                                    adaptées à vos besoins de croissance.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <p>
-                        Un accompagnement orienté performance avec des résultats
-                        mesurables pour assurer la croissance et la pérennité de votre activité.
-                    </p>
-                    <a href="#services" class="service-details-link">
-                        <i class="las la-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
 
+                    <!-- Bloc 4 -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeInUp animated" data-wow-delay="400ms">
+                        <div class="feature-item-wrap">
+                            <div class="feature-icon">
+                                <i class="las la-hand-holding-usd"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Levée de fonds & M&A</h4>
+                                <p>
+                                    Accompagnement stratégique dans la levée de capitaux
+                                    et les opérations de fusion-acquisition.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
     </div>
-</div>
     <!-- About Section  -->
     <div id="apropos" class="about-section about-two section-padding pt-0">
         <div class="container">
@@ -409,6 +412,47 @@
     </div>
 
 
+    <style>
+        /* Listes de sous-services dans les feature cards */
+
+        #services .feature-item-wrap {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #services .feature-content {
+            flex: 1;
+        }
+
+        #services [class*="col-"] {
+            display: flex;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0;
+        }
+
+        .service-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            font-size: 14px;
+            color: white;
+            padding: 4px 0;
+            line-height: 1.5;
+        }
+
+        .service-list li i {
+            font-size: 12px;
+            color: white;
+            /* adapte à ta couleur primaire */
+            margin-top: 4px;
+            flex-shrink: 0;
+        }
+    </style>
 
     <!-- Feature Section  -->
     <div id="services" class="feature-section section-padding pb-0">
@@ -429,74 +473,157 @@
 
             <div class="row mt-60">
 
-                <!-- Bloc 1 -->
-                <div class="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeInUp animated" data-wow-delay="100ms">
+                <!-- Bloc 1 : Management des projets -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12 wow fadeInUp animated" data-wow-delay="100ms">
                     <div class="feature-item-wrap">
                         <div class="feature-icon">
-                            <i class="las la-search-dollar"></i>
+                            <i class="las la-project-diagram"></i>
                         </div>
                         <div class="feature-content">
-                            <h4>Étude d’opportunité</h4>
+                            <h4>Management des projets</h4>
                             <p>
-                                Analyse approfondie de la viabilité et du potentiel
-                                de vos projets pour orienter vos décisions stratégiques.
+                                Nous vous apportons le changement et l'avantage concurrentiel
+                                nécessaire afin d'avoir des résultats conformes à la stratégie
+                                de l'entreprise sur la base de la méthodologie PMBOK.
+                            </p>
+                            <ul class="service-list">
+                                <li><i class="las la-angle-right"></i> Diagnostic projet</li>
+                                <li><i class="las la-angle-right"></i> Coordination, gestion et suivi de projet</li>
+                                <li><i class="las la-angle-right"></i> Optimisation des coûts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloc 2 : Système d'information -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12 wow fadeInUp animated" data-wow-delay="200ms">
+                    <div class="feature-item-wrap">
+                        <div class="feature-icon">
+                            <i class="las la-network-wired"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Système d'information</h4>
+                            <p>
+                                Nous aidons votre organisation à s'assurer de la fiabilité
+                                des informations nécessaires à la bonne marche des opérations
+                                et du gouvernement d'entreprise.
+                            </p>
+                            <ul class="service-list">
+                                <li><i class="las la-angle-right"></i> Mise en place de schéma directeur des SI</li>
+                                <li><i class="las la-angle-right"></i> Choix d'applicatif</li>
+                                <li><i class="las la-angle-right"></i> Gouvernance des systèmes d'information</li>
+                                <li><i class="las la-angle-right"></i> Mise en place ERP</li>
+                                <li><i class="las la-angle-right"></i> Gestion du changement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloc 3 : Management des risques -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12 wow fadeInUp animated" data-wow-delay="300ms">
+                    <div class="feature-item-wrap">
+                        <div class="feature-icon">
+                            <i class="las la-shield-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Management des risques</h4>
+                            <p>
+                                Nous aidons votre organisation à apporter une réponse efficace
+                                face aux incertitudes auxquelles elle fait face, renforçant ainsi
+                                la capacité de création de valeur de l'organisation.
+                            </p>
+                            <ul class="service-list">
+                                <li><i class="las la-angle-right"></i> Mise en place de plan de management des risques
+                                </li>
+                                <li><i class="las la-angle-right"></i> Analyse et gestion des risques</li>
+                                <li><i class="las la-angle-right"></i> Cartographie des risques et des vulnérabilités
+                                </li>
+                                <li><i class="las la-angle-right"></i> Implémentation de logiciel de gestion des risques
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin: 25px;"></div>
+                <!-- Bloc 4 : Horizons PME -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12 wow fadeInUp animated" data-wow-delay="400ms">
+                    <div class="feature-item-wrap">
+                        <div class="feature-icon">
+                            <i class="las la-building"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Horizons PME</h4>
+                            <p>
+                                Un ensemble de solutions adaptées aux préoccupations des PME
+                                dans le respect des normes de bonne gouvernance.
+                            </p>
+                            <ul class="service-list">
+                                <li><i class="las la-angle-right"></i> Études d'opportunité et de faisabilité</li>
+                                <li><i class="las la-angle-right"></i> Diagnostic et assistance organisationnelle</li>
+                                <li><i class="las la-angle-right"></i> Manuel de procédures et outils de contrôle</li>
+                                <li><i class="las la-angle-right"></i> Élaboration de stratégie de financement et
+                                    accompagnement</li>
+                                <li><i class="las la-angle-right"></i> Mise en place d'outils de suivi et de management
+                                    des risques</li>
+                                <li><i class="las la-angle-right"></i> Assistance juridique, fiscale et comptable</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloc 5 : Stratégie -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12 wow fadeInUp animated" data-wow-delay="500ms">
+                    <div class="feature-item-wrap">
+                        <div class="feature-icon">
+                            <i class="las la-chess-king"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Stratégie</h4>
+                            <p>
+                                Nous vous accompagnons dans vos problématiques de développement
+                                par la définition de plans stratégiques et la mise en place de
+                                plans d'actions en fonction des choix et des objectifs à atteindre,
+                                afin de contribuer à créer de la valeur à long terme.
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Bloc 2 -->
-                <div class="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeInUp animated" data-wow-delay="200ms">
+                <!-- Bloc 6 : Juridique & Fiscal -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-12 wow fadeInUp animated" data-wow-delay="600ms">
                     <div class="feature-item-wrap">
                         <div class="feature-icon">
-                            <i class="las la-tasks"></i>
+                            <i class="las la-balance-scale"></i>
                         </div>
                         <div class="feature-content">
-                            <h4>Gestion de projet</h4>
+                            <h4>Juridique &amp; Fiscal</h4>
                             <p>
-                                Planification, coordination et suivi rigoureux
-                                pour assurer la réussite de vos projets.
+                                Nous vous aidons à améliorer votre gouvernance d'entreprise
+                                par une large gamme de services en matière juridique et fiscale.
                             </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bloc 3 -->
-                <div class="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeInUp animated" data-wow-delay="300ms">
-                    <div class="feature-item-wrap">
-                        <div class="feature-icon">
-                            <i class="las la-coins"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h4>Recherche de financement</h4>
-                            <p>
-                                Identification et mobilisation des solutions de financement
-                                adaptées à vos besoins de croissance.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Bloc 4 -->
-                <div class="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeInUp animated" data-wow-delay="400ms">
-                    <div class="feature-item-wrap">
-                        <div class="feature-icon">
-                            <i class="las la-hand-holding-usd"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h4>Levée de fonds & M&A</h4>
-                            <p>
-                                Accompagnement stratégique dans la levée de capitaux
-                                et les opérations de fusion-acquisition.
-                            </p>
+                            <ul class="service-list">
+                                <li><i class="las la-angle-right"></i> Consultation écrite/orale en matière juridique et
+                                    fiscale</li>
+                                <li><i class="las la-angle-right"></i> Assistance à contrôle fiscal</li>
+                                <li><i class="las la-angle-right"></i> Secrétariat juridique</li>
+                                <li><i class="las la-angle-right"></i> Conseils en matière d'investissement</li>
+                                <li><i class="las la-angle-right"></i> Revue juridique, fiscale et sociale</li>
+                                <li><i class="las la-angle-right"></i> Cartographie des risques juridiques et fiscaux
+                                </li>
+                                <li><i class="las la-angle-right"></i> Manuel de procédures fiscales</li>
+                                <li><i class="las la-angle-right"></i> Legal and Tax Risk Management</li>
+                                <li><i class="las la-angle-right"></i> Optimisation fiscale nationale et internationale
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
             </div>
+
         </div>
     </div>
-
 
 
     <!-- Process Section  -->
@@ -573,6 +700,332 @@
             </div>
         </div>
     </div>
+
+    <style>
+/* ===== FORMATIONS ===== */
+.formation-label {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #c4b67c;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.formation-divider {
+    width: 48px;
+    height: 3px;
+    background: #056251;
+    border-radius: 2px;
+    margin: 12px auto 30px;
+}
+
+.seminaire-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+.f-card {
+    background: #fff;
+    border: 0.5px solid #e0e0e0;
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.f-card:hover {
+    background: #056251;
+    box-shadow: 0 10px 35px rgba(5, 98, 81, 0.25);
+    transform: translateY(-4px);
+}
+
+.f-card-top {
+    background: #056251;
+    padding: 20px 22px 16px;
+    transition: background 0.3s ease;
+}
+
+.f-card:hover .f-card-top {
+    background: #c4b67c;
+}
+
+.f-icon {
+    width: 42px;
+    height: 42px;
+    background: rgba(196, 182, 124, 0.22);
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    transition: background 0.3s ease;
+}
+
+.f-card:hover .f-icon {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.f-icon i {
+    font-size: 70px;
+    color: #c4b67c;
+    transition: color 0.3s ease;
+}
+
+.f-card:hover .f-icon i {
+    color: #fff;
+}
+
+.f-card-top h4 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+.f-card:hover .f-card-top h4 {
+    color: #1a1a2e;
+}
+
+.f-card-body {
+    padding: 16px 20px;
+    flex: 1;
+}
+
+.f-mod {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 7px 0;
+    border-bottom: 1px solid #f4f4f4;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.f-mod:last-child {
+    border-bottom: none;
+}
+
+.f-card:hover .f-mod {
+    border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+
+.f-mod-num {
+    font-size: 13px;
+    font-weight: 700;
+    color: #056251;
+    background: #e6f2ef;
+    padding: 2px 8px;
+    border-radius: 20px;
+    white-space: nowrap;
+    margin-top: 2px;
+    min-width: fit-content;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.f-card:hover .f-mod-num {
+    background: rgba(196, 182, 124, 0.25);
+    color: #c4b67c;
+}
+
+.f-mod-txt {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+}
+
+.f-card:hover .f-mod-txt {
+    color: #fff;
+}
+
+/* ===== SÉMINAIRE ===== */
+.f-seminaire {
+    border-top: 3px solid #c4b67c;
+}
+
+.f-seminaire .f-card-top {
+    background: #1a1a2e;
+}
+
+.f-seminaire .f-mod-num {
+    color: #8a6e1e;
+    background: #f5f0e4;
+}
+
+.f-seminaire:hover {
+    background: #1a1a2e;
+}
+
+.f-seminaire:hover .f-card-top {
+    background: #c4b67c;
+}
+
+.f-seminaire:hover .f-card-top h4 {
+    color: #1a1a2e;
+}
+
+.f-seminaire:hover .f-mod-num {
+    background: rgba(196, 182, 124, 0.2);
+    color: #c4b67c;
+}
+    </style>
+
+    <!-- Formations Section -->
+<div id="formations" class="section-padding">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xl-12 text-center">
+                <div class="section-title">
+                    <p class="formation-label">Programmes</p>
+                    <h2>Nos Formations</h2>
+                    <div class="formation-divider"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-50">
+
+            <!-- Stratégie & Organisation -->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-12 d-flex mb-4 wow fadeInUp animated" data-wow-delay="100ms">
+                <div class="f-card w-100">
+                    <div class="f-card-top">
+                        <div class="f-icon"><i class="las la-chess-king"></i></div>
+                        <h4>Stratégie & Organisation</h4>
+                    </div>
+                    <div class="f-card-body">
+                        <div class="f-mod"><span class="f-mod-num">M1</span><span class="f-mod-txt">Management stratégique</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M2</span><span class="f-mod-txt">Comprendre l'approche processus</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M3</span><span class="f-mod-txt">Comprendre le diagnostic organisationnel</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Management de Projet -->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-12 d-flex mb-4 wow fadeInUp animated" data-wow-delay="200ms">
+                <div class="f-card w-100">
+                    <div class="f-card-top">
+                        <div class="f-icon"><i class="las la-project-diagram"></i></div>
+                        <h4>Management de Projet</h4>
+                    </div>
+                    <div class="f-card-body">
+                        <div class="f-mod"><span class="f-mod-num">M1</span><span class="f-mod-txt">Management de projet : enjeux et intérêts</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M2</span><span class="f-mod-txt">Conduire un projet</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M3</span><span class="f-mod-txt">Optimiser la gestion du projet</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M4</span><span class="f-mod-txt">Management des risques du projet</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Management des Risques -->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-12 d-flex mb-4 wow fadeInUp animated" data-wow-delay="300ms">
+                <div class="f-card w-100">
+                    <div class="f-card-top">
+                        <div class="f-icon"><i class="las la-shield-alt"></i></div>
+                        <h4>Management des Risques</h4>
+                    </div>
+                    <div class="f-card-body">
+                        <div class="f-mod"><span class="f-mod-num">M1</span><span class="f-mod-txt">Enjeux et intérêts du management des risques</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M2</span><span class="f-mod-txt">Risk management et bonne gouvernance</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M3</span><span class="f-mod-txt">Méthodologie Sarbanes-Oxley (SOX)</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M4</span><span class="f-mod-txt">Le modèle ERM</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M5</span><span class="f-mod-txt">Cartographie des risques et vulnérabilités</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M6</span><span class="f-mod-txt">ERM : outil de suivi des risques</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Communication -->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-12 d-flex mb-4 wow fadeInUp animated" data-wow-delay="400ms">
+                <div class="f-card w-100">
+                    <div class="f-card-top">
+                        <div class="f-icon"><i class="las la-comments"></i></div>
+                        <h4>Communication</h4>
+                    </div>
+                    <div class="f-card-body">
+                        <div class="f-mod"><span class="f-mod-num">M1</span><span class="f-mod-txt">Prendre la parole en public avec aisance et efficacité</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M2</span><span class="f-mod-txt">Captiver votre auditoire pour plus de conviction</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M3</span><span class="f-mod-txt">Construire et exposer une argumentation efficace</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M4</span><span class="f-mod-txt">Savoir rédiger des documents efficaces et percutants</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M5</span><span class="f-mod-txt">Rédiger avec efficacité</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M6</span><span class="f-mod-txt">Être et paraître à l'oral</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marketing & Vente -->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-12 d-flex mb-4 wow fadeInUp animated" data-wow-delay="500ms">
+                <div class="f-card w-100">
+                    <div class="f-card-top">
+                        <div class="f-icon"><i class="las la-chart-line"></i></div>
+                        <h4>Marketing & Vente</h4>
+                    </div>
+                    <div class="f-card-body">
+                        <div class="f-mod"><span class="f-mod-num">M1</span><span class="f-mod-txt">Techniques de vente : perfectionnement</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M2</span><span class="f-mod-txt">Prospecter et gagner de nouveaux clients</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M3</span><span class="f-mod-txt">Vendre par téléphone</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M4</span><span class="f-mod-txt">Fidéliser et reconquérir les clients perdus</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M5</span><span class="f-mod-txt">Gérer un compte-client</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M6</span><span class="f-mod-txt">Efficacité de la documentation commerciale</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M7</span><span class="f-mod-txt">Gestion de la relation client</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M8</span><span class="f-mod-txt">Marketing téléphonique</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M9</span><span class="f-mod-txt">Technique de développement webmarketing</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M10</span><span class="f-mod-txt">Key account management</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M11</span><span class="f-mod-txt">Management de la performance</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M12</span><span class="f-mod-txt">Management de la force de vente</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Système d'Information -->
+            <div class="col-xl-4 col-lg-4 col-md-6 col-12 d-flex mb-4 wow fadeInUp animated" data-wow-delay="600ms">
+                <div class="f-card w-100">
+                    <div class="f-card-top">
+                        <div class="f-icon"><i class="las la-network-wired"></i></div>
+                        <h4>Système d'Information</h4>
+                    </div>
+                    <div class="f-card-body">
+                        <div class="f-mod"><span class="f-mod-num">M1</span><span class="f-mod-txt">Initier un projet ERP</span></div>
+                        <div class="f-mod"><span class="f-mod-num">M2</span><span class="f-mod-txt">Conduire un projet ERP</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Séminaires -->
+        <div class="row mt-20">
+            <div class="col-xl-12 text-center">
+                <p class="formation-label">Certification</p>
+                <h3 class="seminaire-title">Nos Séminaires</h3>
+                <div class="formation-divider" style="background:#c4b67c; margin: 0 auto 30px;"></div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-10 col-12 wow fadeInUp animated" data-wow-delay="100ms">
+                <div class="f-card f-seminaire">
+                    <div class="f-card-top">
+                        <div class="f-icon"><i class="las la-award"></i></div>
+                        <h4>Préparation au CIA <span style="font-weight:400; opacity:.75;">— Certificate in Internal Auditing</span></h4>
+                    </div>
+                    <div class="f-card-body">
+                        <div class="f-mod"><span class="f-mod-num">Partie I</span><span class="f-mod-txt">Le rôle de l'audit interne dans la gouvernance, les risques et le contrôle</span></div>
+                        <div class="f-mod"><span class="f-mod-num">Partie II</span><span class="f-mod-txt">La conduite d'une mission d'audit interne</span></div>
+                        <div class="f-mod"><span class="f-mod-num">Partie III</span><span class="f-mod-txt">Analyse de l'activité des entreprises et technologies de l'information</span></div>
+                        <div class="f-mod"><span class="f-mod-num">Partie IV</span><span class="f-mod-txt">Les compétences en gestion d'entreprises</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
 
 
     <!-- FAQ Section -->
